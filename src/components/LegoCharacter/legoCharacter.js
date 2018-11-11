@@ -1,4 +1,3 @@
-/* eslint-disable import/no-named-as-default */
 import $ from 'jquery';
 import 'bootstrap';
 import '../../index.scss';
@@ -35,3 +34,19 @@ const printHeads = () => {
 };
 
 export default printHeads;
+
+    $('part-head').html(headPrint);
+  });
+};
+
+getHeads()
+  .then((data) => {
+    console.log(data.data);
+    loadHeads(data.data);
+  })
+  .catch((error) => {
+    console.error(error);
+  });
+
+$('part-head').show();
+
