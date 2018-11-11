@@ -1,7 +1,6 @@
-import $ from 'jquery';
+// import $ from 'jquery';
 import 'bootstrap';
 import './index.scss';
+import printHeads from './components/LegoCharacter/legoCharacter';
 
-$('#click-button').on('click', () => {
-  $('#important-text').append('<p>Hello World!</p>');
-});
+printHeads();
